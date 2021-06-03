@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://use.fontawesome.com/1f6c3df2c4.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+var otaq
+$(document).ready(function(){
+    $(".but").click(function(){
+        var otaq = $("input[name='otaq']:checked").val();
+        if(otaq){
+            if(otaq=='adi'){
+                $('.conta').css('display', 'block')
+                $('.contn').css('display', 'block')
+            }
+        };
+        
+    });
+
+    $(".but").click(function(){
+        otaq = $("input[name='otaq']:checked").val();
+        if(otaq){
+            if(otaq=='kabinet'){
+                $('.conta').css('display', 'none')
+                $('.contn').css('display', 'block')
+            }
+        };
+        
+    });
+
+
+
+
+    $("#Okn").click(function(){
+        var saat = parseInt($("#saatn").val());
+        var deq = parseInt($("#deqn").val());
+        console.log(saat)
+        if(saat>23||saat<0){
+            document.getElementById("saat").value=''
+            alert('error');
+        }
+            
+        console.log(deq)
+        if(deq>59||deq<0){
+            document.getElementById("deq").value=''
+            alert('error');
+        }
+        isaat = new Date().getHours(994)
+        ideq = new Date().getMinutes(994)
+
+        saat = isaat - saat
+        deq = ideq - deq
+        var yekun = (saat*60+deq)*0.01667
+        if(otaq=='kabinet'){
+        document.getElementById("yekunn").innerHTML= 'MEBLEG : '+ (yekun*2).toFixed(2)
+        }
+        else if(otaq=='adi'){
+        document.getElementById("yekunn").innerHTML= 'MEBLEG : '+ yekun.toFixed(2)
+        }
+    });
+
+
+    $("#Oka").click(function(){
+        var saat = parseInt($("#saata").val());
+        var deq = parseInt($("#deqa").val());
+
+        console.log(saat)
+        if(saat>23||saat<0){
+            document.getElementById("saat").value=''
+            alert('error');
+        }
+            
+        console.log(deq)
+        if(deq>59||deq<0){
+            document.getElementById("deq").value=''
+            alert('error');
+        }
+        var yekun = (saat*60+deq)*0.01667
+        console.log(yekun)
+        document.getElementById("yekuna").innerHTML= 'MEBLEG : '+ yekun.toFixed(2)
+    });
+});
+
+
+
+
+
+</script>
+
+
+
+</head>
+<body >
+    <div class="container">
+    
+<ul>
+    <li>
+
+        <label class="otaq1 col-md-4 col-sm-6 col-lg-3 col-7" for="adi"><input type="radio" id="adi" name="otaq" value="adi">
+        ADI OTAQ</label>
+        
+    </li>
+    <li>
+
+        <label class="otaq1 col-md-4 col-sm-6 col-lg-3 col-7" for="kabinet"><input type="radio" id="kabinet" name="otaq" value="kabinet">
+        KABINET</label>
+<input  class="but" type="button" value="Ok">
+
+    </li>
+
+</ul>
+<div class="contn">
+    <form>
+        <div class="col-md-4 col-sm-6 timin col-lg-3 col-7"><br>
+       
+            <center><h3>NACALA  </h3></center>
+            <input class="timearea" type="text" id="saatn" name="nacala">
+            <p id="ara">:</p>
+            <input class="timearea" type="text" id="deqn" name="nacala">
+            <button  name="nacala" id="Okn" type="button">Ok</button>
+
+        </div>
+            <div class="col-md-4 col-lg-3 col-sm-6 col-7 conyekun" >
+                <h4 id="yekunn">
+                    MEBLEG : 
+                </h4>
+            </div>
+       
+    </form>
+    
+</div>
+
+
+
+
+    <div class="conta">
+        <form>
+
+            <div  class="col-md-4 col-lg-3 col-sm-6 col-7 timin"><br>
+                <center><h3>ADI</h3></center>
+                <input class="timearea" type="text" id="saata" name="nacala">
+                <p id="ara">:</p>
+                <input class="timearea" type="text" id="deqa" name="nacala">
+                <button name="nacala" id="Oka" type="button">Ok</button>
+    
+            </div>
+            <div class="col-md-4  col-lg-3 col-sm-6 col-7 conyekun" >
+                <h4 id="yekuna">
+                MEBLEG : 
+                </h4>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

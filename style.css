@@ -1,0 +1,126 @@
+body{
+    background: rgb(52, 190, 214) !important;;
+}
+
+.container{
+    display:ruby-base;
+    
+}
+.conta{
+    display:none;
+
+}
+.contn{
+    display:none;
+}
+ul, li {
+    list-style-type: none;
+}
+.timearea {
+    width: 10%;
+    min-width: 30px;
+    position: relative;
+    align-items: center;
+    left: 23%;
+}
+button ,.but{
+    background-color:blueviolet;
+    color: white;
+    
+}
+.but{
+    position: relative;
+    left: 40%;
+    margin-left: 20px;
+    display:inline-block;
+}
+#ara{
+    margin-left: 3px;
+    margin-right: 3px;
+    display: inline-block;
+    font: 1.5em sans-serif;
+    color: white;
+    position: relative;
+    align-items: center;
+    left: 23%;
+}
+.timin{
+    position: relative;
+    width: 40%;
+    left: 33%;
+    background-color: rgb(235, 121, 121);
+    align-items: center;
+    box-shadow: 14px 14px 10px #000;
+    margin-top: 50px
+
+}
+h3{
+    position: relative;
+
+}
+
+.conyekun{
+    background-color:blueviolet;
+    height: 80px;
+    width: 40%;
+    color: white;
+    position: relative;
+    left: 33%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 14px 14px 10px #000;
+
+}
+h4{
+    position: relative;
+    top: 45%;
+    
+}
+#yekuna{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    top: 38%;
+    
+}
+#yekunn{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    top: 38%;
+    
+}
+#Okn{
+    display: inline-block;
+    position: relative;
+    left: 23%;
+    margin: 10px;
+}
+
+#Oka{
+    display: inline-block;
+    position: relative;
+    left: 23%;
+    margin: 10px;
+
+}
+label{
+    background-color:rgb(240, 153, 23);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    position: relative;
+    width: 50%;
+    left: 30%;
+    color: rgb(2, 1, 1);
+    border-radius: 20%;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+
+}
+label:hover{
+    background-color:rgb(104, 29, 29);
+    margin-left: 10px;
+    color: #fff;
+
+}
