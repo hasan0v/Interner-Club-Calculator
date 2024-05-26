@@ -80,4 +80,4 @@ For any inquiries or feedback, please reach out via email: [alihasanov.m@gmail.c
 
 ---
 
-Created by Ali Hasanov | © 2024 All rights reserved.
+Created by Ali Hasanov | © 2021 All rights reserved.
